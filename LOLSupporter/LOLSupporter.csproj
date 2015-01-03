@@ -36,16 +36,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="clipper_library">
-      <HintPath>D:\Game\LeagueSharp\\System\clipper_library.dll</HintPath>
+      <HintPath>D:\game\LienMinhHuyenThoai\GameData\Apps\lolVN\LeagueSharp\\System\clipper_library.dll</HintPath>
     </Reference>
     <Reference Include="LeagueSharp">
-      <HintPath>D:\Game\LeagueSharp\\System\LeagueSharp.dll</HintPath>
+      <HintPath>D:\game\LienMinhHuyenThoai\GameData\Apps\lolVN\LeagueSharp\\System\LeagueSharp.dll</HintPath>
     </Reference>
     <Reference Include="LeagueSharp.Common">
-      <HintPath>D:\Game\LeagueSharp\\System\LeagueSharp.Common.dll</HintPath>
+      <HintPath>D:\game\LienMinhHuyenThoai\GameData\Apps\lolVN\LeagueSharp\\System\LeagueSharp.Common.dll</HintPath>
     </Reference>
     <Reference Include="SharpDX">
-      <HintPath>D:\Game\LeagueSharp\\System\SharpDX.dll</HintPath>
+      <HintPath>D:\game\LienMinhHuyenThoai\GameData\Apps\lolVN\LeagueSharp\\System\SharpDX.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -99,6 +99,7 @@
     <Compile Include="Util\DamageBoostDatabase.cs" />
     <Compile Include="Util\Extensions.cs" />
     <Compile Include="Util\Helpers.cs" />
+    <Compile Include="xSLxOrbwalker.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
