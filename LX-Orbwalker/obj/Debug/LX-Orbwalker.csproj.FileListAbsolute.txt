@@ -1,0 +1,13 @@
+c:\users\nguyenduy\documents\visual studio 2013\Projects\LOLSupporter\LX-Orbwalker\bin\Debug\LX-Orbwalker.dll
+c:\users\nguyenduy\documents\visual studio 2013\Projects\LOLSupporter\LX-Orbwalker\bin\Debug\LX-Orbwalker.pdb
+c:\users\nguyenduy\documents\visual studio 2013\Projects\LOLSupporter\LX-Orbwalker\bin\Debug\LeagueSharp.Common.dll
+c:\users\nguyenduy\documents\visual studio 2013\Projects\LOLSupporter\LX-Orbwalker\bin\Debug\LeagueSharp.dll
+c:\users\nguyenduy\documents\visual studio 2013\Projects\LOLSupporter\LX-Orbwalker\bin\Debug\SharpDX.dll
+c:\users\nguyenduy\documents\visual studio 2013\Projects\LOLSupporter\LX-Orbwalker\bin\Debug\SharpDX.Direct3D9.dll
+c:\users\nguyenduy\documents\visual studio 2013\Projects\LOLSupporter\LX-Orbwalker\bin\Debug\SharpDX.Toolkit.dll
+c:\users\nguyenduy\documents\visual studio 2013\Projects\LOLSupporter\LX-Orbwalker\bin\Debug\SharpDX.Toolkit.Graphics.dll
+c:\users\nguyenduy\documents\visual studio 2013\Projects\LOLSupporter\LX-Orbwalker\bin\Debug\LeagueSharp.xml
+c:\users\nguyenduy\documents\visual studio 2013\Projects\LOLSupporter\LX-Orbwalker\bin\Debug\SharpDX.Toolkit.xml
+c:\users\nguyenduy\documents\visual studio 2013\Projects\LOLSupporter\LX-Orbwalker\bin\Debug\SharpDX.Toolkit.Graphics.xml
+c:\users\nguyenduy\documents\visual studio 2013\Projects\LOLSupporter\LX-Orbwalker\obj\Debug\LX-Orbwalker.dll
+c:\users\nguyenduy\documents\visual studio 2013\Projects\LOLSupporter\LX-Orbwalker\obj\Debug\LX-Orbwalker.pdb
