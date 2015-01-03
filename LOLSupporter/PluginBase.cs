@@ -47,6 +47,17 @@ namespace LOLSupporter
     /// </summary>
     public abstract class PluginBase
     {
+        //Key binds
+        public static MenuItem comboKey;
+        public static MenuItem harassKey;
+        public static MenuItem laneclearKey;
+        public static MenuItem lanefreezeKey;
+        //Items
+        public static Items.Item DFG;
+        //Orbwalker instance
+        private static Orbwalking.Orbwalker _orbwalker;
+        private static Menu orbwalkerMenu;
+
         #region BeforeEnemyAttack
 
         public delegate void BeforeEnemyAttackEvenH(BeforeEnemyAttackEventArgs args);
@@ -68,12 +79,15 @@ namespace LOLSupporter
         /// </summary>
         protected PluginBase()
         {
-            Author = "h3h3";
+            Author = "h3h3, Edit by caoanhhao and SakuraEvil";
             ChampionName = Player.ChampionName;
             Version = Program.Version;
 
             InitConfig();
-            InitOrbwalker();
+
+            // init orb walker (caoanhhao remove)
+            //InitOrbwalker();
+            
             InitPluginEvents();
             InitPrivateEvents();
 
@@ -218,8 +232,17 @@ namespace LOLSupporter
         private void InitConfig()
         {
             Config = new Menu("Support: " + Player.ChampionName, Player.ChampionName, true);
-            Config.AddSubMenu(new Menu("Orbwalking", "Orbwalking"));
+            
             TargetSelector.AddToMenu(Config.AddSubMenu(new Menu("Target Selector", "Target Selector")));
+
+            //Config.AddSubMenu(new Menu("Orbwalking", "Orbwalking"));
+            ////Base menu
+            orbwalkerMenu = new Menu("Orbwalker", "Orbwalker");
+
+            ////Orbwalker
+            Config.AddSubMenu(orbwalkerMenu);
+
+            ChooseOrbwalker(); //uncomment this line
 
             ComboConfig = Config.AddSubMenu(new Menu("Combo", "Combo"));
             HarassConfig = Config.AddSubMenu(new Menu("Harass", "Harass"));
@@ -594,5 +617,15 @@ namespace LOLSupporter
         /// </remarks>
         /// <param name="config">Menu</param>
         public virtual void DrawingMenu(Menu config) { }
+
+        private static void ChooseOrbwalker()
+        {
+            xSLxOrbwalker.AddToMenu(orbwalkerMenu);
+            comboKey = Config.Item("Combo_Key");
+            harassKey = Config.Item("Harass_Key");
+            laneclearKey = Config.Item("LaneClear_Key");
+            lanefreezeKey = Config.Item("LaneFreeze_Key");
+            Game.PrintChat("xSLx Orbwalker Loaded");
+        }
     }
 }
