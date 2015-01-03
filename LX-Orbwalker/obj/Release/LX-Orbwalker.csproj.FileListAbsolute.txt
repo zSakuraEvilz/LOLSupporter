@@ -9,5 +9,5 @@ C:\Users\NguyenDuy\Documents\Visual Studio 2013\Projects\LOLSupporter\LX-Orbwalk
 C:\Users\NguyenDuy\Documents\Visual Studio 2013\Projects\LOLSupporter\LX-Orbwalker\bin\Release\LeagueSharp.xml
 C:\Users\NguyenDuy\Documents\Visual Studio 2013\Projects\LOLSupporter\LX-Orbwalker\bin\Release\SharpDX.Toolkit.xml
 C:\Users\NguyenDuy\Documents\Visual Studio 2013\Projects\LOLSupporter\LX-Orbwalker\bin\Release\SharpDX.Toolkit.Graphics.xml
-C:\Users\NguyenDuy\Documents\Visual Studio 2013\Projects\LOLSupporter\LX-Orbwalker\obj\Debug\LX-Orbwalker.dll
-C:\Users\NguyenDuy\Documents\Visual Studio 2013\Projects\LOLSupporter\LX-Orbwalker\obj\Debug\LX-Orbwalker.pdb
+C:\Users\NguyenDuy\Documents\Visual Studio 2013\Projects\LOLSupporter\LX-Orbwalker\obj\Release\LX-Orbwalker.dll
+C:\Users\NguyenDuy\Documents\Visual Studio 2013\Projects\LOLSupporter\LX-Orbwalker\obj\Release\LX-Orbwalker.pdb

@@ -2,7 +2,7 @@
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{28093804-9D55-4081-804B-F89D6ADB5325}</ProjectGuid>
     <OutputType>Exe</OutputType>
@@ -11,38 +11,45 @@
     <AssemblyName>LOLSupporter</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <PreBuildEvent />
+    <PostBuildEvent />
+    <OutputPath>bin\Release</OutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x86</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>bin\Release</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x86</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>bin\Release</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="clipper_library">
+      <HintPath>D:\Game\LeagueSharp\\System\clipper_library.dll</HintPath>
+    </Reference>
     <Reference Include="LeagueSharp">
-      <HintPath>D:\Game\LeagueSharp\System\LeagueSharp.dll</HintPath>
+      <HintPath>D:\Game\LeagueSharp\\System\LeagueSharp.dll</HintPath>
     </Reference>
     <Reference Include="LeagueSharp.Common">
-      <HintPath>D:\Game\LeagueSharp\System\LeagueSharp.Common.dll</HintPath>
+      <HintPath>D:\Game\LeagueSharp\\System\LeagueSharp.Common.dll</HintPath>
     </Reference>
     <Reference Include="SharpDX">
-      <HintPath>D:\Game\LeagueSharp\System\SharpDX.dll</HintPath>
+      <HintPath>D:\Game\LeagueSharp\\System\SharpDX.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -50,8 +57,48 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Autoplay\Autoplay.cs" />
+    <Compile Include="Autoplay\metaHandler.cs" />
+    <Compile Include="Autoplay\TreesAutoLevel.cs" />
+    <Compile Include="Evade\Collision.cs" />
+    <Compile Include="Evade\Config.cs" />
+    <Compile Include="Evade\EvadeSpellData.cs" />
+    <Compile Include="Evade\EvadeSpellDatabase.cs" />
+    <Compile Include="Evade\Geometry.cs" />
+    <Compile Include="Evade\Skillshot.cs" />
+    <Compile Include="Evade\SkillshotDetector.cs" />
+    <Compile Include="Evade\SpellData.cs" />
+    <Compile Include="Evade\SpellDatabase.cs" />
+    <Compile Include="Evade\Utils.cs" />
+    <Compile Include="PluginBase.cs" />
+    <Compile Include="Plugins\Alistar.cs" />
+    <Compile Include="Plugins\Annie.cs" />
+    <Compile Include="Plugins\Blitzcrank.cs" />
+    <Compile Include="Plugins\Braum.cs" />
+    <Compile Include="Plugins\Default.cs" />
+    <Compile Include="Plugins\Fiddlesticks.cs" />
+    <Compile Include="Plugins\Janna.cs" />
+    <Compile Include="Plugins\Karma.cs" />
+    <Compile Include="Plugins\Kayle.cs" />
+    <Compile Include="Plugins\Leona.cs" />
+    <Compile Include="Plugins\Lulu.cs" />
+    <Compile Include="Plugins\Morgana.cs" />
+    <Compile Include="Plugins\Nami.cs" />
+    <Compile Include="Plugins\Nunu.cs" />
+    <Compile Include="Plugins\Sona.cs" />
+    <Compile Include="Plugins\Soraka.cs" />
+    <Compile Include="Plugins\Taric.cs" />
+    <Compile Include="Plugins\Thresh.cs" />
+    <Compile Include="Plugins\Zilean.cs" />
+    <Compile Include="Plugins\Zyra.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Protector.cs" />
+    <Compile Include="Util\AntiGapcloser.cs" />
+    <Compile Include="Util\AutoBushRevealer.cs" />
+    <Compile Include="Util\DamageBoostDatabase.cs" />
+    <Compile Include="Util\Extensions.cs" />
+    <Compile Include="Util\Helpers.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -62,6 +109,7 @@
       <Name>LX-Orbwalker</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
